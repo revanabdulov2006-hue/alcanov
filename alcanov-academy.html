@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alcanov Academy — Financial Mastery</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Cursor -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <div id="lightbox-content">
+    <button id="lightbox-close" onclick="closeLightbox()">✕ Close</button>
+    <canvas id="lightbox-img" width="700" height="500"></canvas>
+    <div id="lightbox-info">
+      <div id="lightbox-profit"></div>
+      <div id="lightbox-meta">
+        <div id="lightbox-name"></div>
+        <div id="lightbox-period"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav id="main-nav">
+  <a href="#" class="nav-logo">Alcanov<span>.</span>Academy</a>
+  <ul class="nav-links">
+    <li><a href="#courses">Kurslar</a></li>
+    <li><a href="#results">Nəticələr</a></li>
+    <li><a href="#process">Strategiya</a></li>
+    <li><a href="#testimonials">Tələbələr</a></li>
+  </ul>
+  <a href="#booking" class="nav-cta">Book a Call</a>
+</nav>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section id="hero">
+  <div class="grid-bg"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">E-ticarət experti — 2021-dən bəri</div>
+    <h1 class="hero-headline">
+      <span class="line"><span>Azadlığa</span></span>
+      <span class="line"><span>qovuş<span class="accent">.</span></span></span>
+      <span class="line"><span>PUL qazan<span class="accent">.</span></span></span>
+    </h1>
+    <p class="hero-sub">Uduzmaqdan imtina edənlər üçün professional E-ticarət Təlimi. Ebay və Shopify-da sıfırdan mənfəətə kimi bütün adımları bir təlimdə topladıq.</p>
+    <div class="hero-ctas">
+      <a href="#courses" class="btn-primary"><span>Təlimlərlə tanış ol</span></a>
+      <a href="#booking" class="btn-secondary">Randevu ayarla</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num"><span class="unit">$</span>120k<span class="unit">+</span></div>
+        <div class="hero-stat-label">Tələbələrin qazancı</div>
+      </div>
+      <div class="hero-stat" style="padding-left: 48px;">
+        <div class="hero-stat-num">400+<span class="unit">+</span></div>
+        <div class="hero-stat-label">Aktiv Tələbə</div>
+      </div>
+      <div class="hero-stat" style="padding-left: 48px;">
+        <div class="hero-stat-num">94<span class="unit">%</span></div>
+        <div class="hero-stat-label">Uğur faizi</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">Scroll</div>
+  <div class="hero-marquee">
+    <div class="hero-marquee-track">
+      <span>Shopify Ekspertləri</span><span>eBay Dropshipping</span><span>Şəxsi Mentorluq</span>
+      <span>Məhsul Analizi</span><span>Gəlir artırmaq</span><span>Maliyə azadlığı</span>
+      <span>Shopify Ekspertləri</span><span>eBay Dropshipping</span><span>Şəxsi Mentorluq</span>
+      <span>Məhsul Analizi</span><span>Gəlir artırmaq</span><span>Maliyə azadlığı</span>
+      <span>Shopify Ekspertləri</span><span>eBay Dropshipping</span><span>Şəxsi Mentorluq</span>
+      <span>Məhsul Analizi</span><span>Gəlir artırmaq</span><span>Maliyə azadlığı</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ MANIFESTO ═══════════ -->
+<section id="manifesto">
+  <div class="container">
+    <div class="manifesto-grid">
+      <div class="manifesto-text reveal">
+        <div class="section-label">Alcanov Akademiyanın fəlsəfəsi</div>
+        <h2>Bir kurs deyil.<br><em>Bir sistemdi.</em></h2>
+        <p>Alcanov Akademiya, tələbələrinin uğurunu və qazancını hədəfləyən, ekspert səviyəsində və təcrübə ilə təchiz edilmiş bir sistemdir. Təlimin hər dəqiqəsi e-ticarət biznesinin uğurunu böyütmək üçün hazırlanmışdır.</p>
+        <p>Bu təlim illərin təcrübəsindən əldə edilmiş məlumatları və biliyləri özündə cəmləyib.Bu sadəcə bu işə başlayanlar yox eyni zamanda e-ticarət gəlirini qatlamağı hədəfləyənlər üçündür.</p>
+      </div>
+      <div class="manifesto-visual reveal reveal-delay-2">
+        <div class="diagonal-line"></div>
+        <div class="inner">
+          <div class="big-num">AA</div>
+          <div style="margin-top: 32px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.15em; color: var(--silver-dim);">
+            EST / 2021 — BAKU, AZ<br>
+            <span style="color: var(--gold); margin-top: 8px; display: block;">STRATEJİK TƏRƏFDAŞLIQ</span>
+          </div>
+          <div style="margin-top: 40px; display: flex; flex-direction: column; gap: 12px; text-align: left; padding: 24px; border: 1px solid var(--border);">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--silver);">
+              <span>Uğur faizi</span><span style="color: var(--white);">94%</span>
+            </div>
+            <div style="height: 1px; background: var(--border);"></div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--silver);">
+              <span>Gizli Topluluq</span><span style="color: var(--white);">Daxildir</span>
+            </div>
+            <div style="height: 1px; background: var(--border);"></div>
+            <div style="display: flex; justify-content: space-between; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--silver);">
+              <span>Ömürlük dəstək</span><span style="color: var(--gold);">Daxildir</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ COURSES ═══════════ -->
+<section id="courses" style="border-top: 1px solid var(--border);">
+  <div class="container" style="padding-top: 140px; padding-bottom: 140px;">
+    <div class="courses-header reveal">
+      <div class="section-label">Təlim programları</div>
+      <h2>Özünə uyğun<br>programı seç</h2>
+    </div>
+
+    <!-- Platform Tabs -->
+    <div class="platform-tabs reveal reveal-delay-1">
+      <button class="platform-tab active" onclick="switchPlatform('shopify', this)">Shopify</button>
+      <button class="platform-tab" onclick="switchPlatform('ebay', this)">eBay</button>
+    </div>
+
+    <!-- Shopify Content -->
+    <div class="platform-content active" id="platform-shopify">
+      <div class="courses-grid">
+        <div class="course-card revealed">
+          <div class="course-card-tag">Foundation</div>
+          <h3>Shopify Zero to Launch</h3>
+          <p>Complete store setup, niche validation, supplier sourcing, and your first profitable product. Everything you need to launch in 30 days.</p>
+          <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px;">
+            <div style="display: flex; gap: 8px; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--silver);">
+              <span style="color: var(--gold);">→</span> 12 Video Modules
+            </div>
+            <div style="display: flex; gap: 8px; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--silver);">
+              <span style="color: var(--gold);">→</span> Store Audit Checklist
+            </div>
+            <div style="display: flex; gap: 8px; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--silver);">
+              <span style="color: var(--gold);">→</span> Supplier Database Access
+            </div>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-price"><span class="curr">from </span>$297</div>
+            <a href="https://wa.me/994515309697" target="_blank" class="course-btn">Enroll Now</a>
+          </div>
+        </div>
+        <div class="course-card revealed" style="transition-delay: 0.1s;">
+          <div class="course-card-badge">Most Popular</div>
+          <div class="course-card-tag">Advanced</div>
+          <h3>Shopify Scaling Blueprint</h3>
+          <p>Paid ads mastery, email sequences, conversion rate optimization, and automation systems to scale past $10K/month.</p>
+          <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px;">
+            <div style="display: flex; gap: 8px; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--silver);">
+              <span style="color: var(--gold);">→</span> 24 Video Modules
+            </div>
+            <div style="display: flex; gap: 8px; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--silver);">
+              <span style="color: var(--gold);">→</span> FB & TikTok Ads Templates
+            </div>
+            <div style="display: flex; gap: 8px; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--silver);">
+              <span style="color: var(--gold);">→</span> 4 Live Q&A Calls
+            </div>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-price"><span class="curr">from </span>$597</div>
+            <a href="https://wa.me/994515309697" target="_blank" class="course-btn">Enroll Now</a>
+          </div>
+        </div>
+        <div class="course-card revealed" style="transition-delay: 0.2s;">
+          <div class="course-card-tag">Elite</div>
+          <h3>Full-Stack Commerce Mastery</h3>
+          <p>End-to-end brand building — DTC strategy, private label, influencer partnerships, and building an exit-ready business asset.</p>
+          <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px;">
+            <div style="display: flex; gap: 8px; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--silver);">
+              <span style="color: var(--gold);">→</span> 36 Video Modules
+            </div>
+            <div style="display: flex; gap: 8px; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--silver);">
+              <span style="color: var(--gold);">→</span> 1-on-1 Strategy Call
+            </div>
+            <div style="display: flex; gap: 8px; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--silver);">
+              <span style="color: var(--gold);">→</span> Lifetime Community Access
+            </div>
+          </div>
+          <div class="course-card-footer">
+            <div class="course-price"><span class="curr">from </span>$997</div>
+            <a href="https://wa.me/994515309697" target="_blank" class="course-btn">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- eBay Content -->
+    <div class="platform-content" id="platform-ebay">
+      <div class="ebay-toggle-wrap">
+        <div class="ebay-toggle">
+          <button class="ebay-toggle-btn active" onclick="switchEbay('video', this)">Video Training</button>
+          <button class="ebay-toggle-btn" onclick="switchEbay('mentorship', this)">Personal Mentorship</button>
+        </div>
+      </div>
+
+      <div class="ebay-panel active" id="ebay-video">
+        <div class="courses-grid">
+          <div class="course-card revealed">
+            <div class="course-card-tag">Beginner</div>
+            <h3>eBay Dropship Foundations</h3>
+            <p>Account setup, product research tools, listing optimization, and your first sale — the complete beginner system with zero guesswork.</p>
+            <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px;">
+              <div style="display: flex; gap: 8px; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--silver);"><span style="color: var(--gold);">→</span> 15 HD Video Modules</div>
+              <div style="display: flex; gap: 8px; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--silver);"><span style="color: var(--gold);">→</span> Research Tools Guide</div>
+              <div style="display: flex; gap: 8px; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--silver);"><span style="color: var(--gold);">→</span> Private Community</div>
+            </div>
+            <div class="course-card-footer">
+              <div class="course-price"><span class="curr">from </span>$197</div>
+              <a href="https://wa.me/994515309697" target="_blank" class="course-btn">Enroll Now</a>
+            </div>
+          </div>
+          <div class="course-card revealed" style="transition-delay: 0.1s;">
+            <div class="course-card-badge">Best Value</div>
+            <div class="course-card-tag">Intermediate</div>
+            <h3>eBay Profit Machine</h3>
+            <p>Product stacking, supplier negotiations, account health management, and automated repricing. The system that runs while you sleep.</p>
+            <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px;">
+              <div style="display: flex; gap: 8px; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--silver);"><span style="color: var(--gold);">→</span> 22 Video Modules</div>
+              <div style="display: flex; gap: 8px; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--silver);"><span style="color: var(--gold);">→</span> Automation Toolkit</div>
+              <div style="display: flex; gap: 8px; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--silver);"><span style="color: var(--gold);">→</span> 2 Group Coaching Calls</div>
+            </div>
+            <div class="course-card-footer">
+              <div class="course-price"><span class="curr">from </span>$447</div>
+              <a href="https://wa.me/994515309697" target="_blank" class="course-btn">Enroll Now</a>
+            </div>
+          </div>
+          <div class="course-card revealed" style="transition-delay: 0.2s;">
+            <div class="course-card-tag">Pro</div>
+            <h3>eBay Empire Builder</h3>
+            <p>Multi-account strategy, VA hiring & training, inventory systems, and scaling to $50K+ monthly. Built for serious operators only.</p>
+            <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px;">
+              <div style="display: flex; gap: 8px; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--silver);"><span style="color: var(--gold);">→</span> 30 Video Modules + Vault</div>
+              <div style="display: flex; gap: 8px; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--silver);"><span style="color: var(--gold);">→</span> VA Hiring Templates</div>
+              <div style="display: flex; gap: 8px; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--silver);"><span style="color: var(--gold);">→</span> Monthly Group Calls</div>
+            </div>
+            <div class="course-card-footer">
+              <div class="course-price"><span class="curr">from </span>$797</div>
+              <a href="https://wa.me/994515309697" target="_blank" class="course-btn">Enroll Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ebay-panel" id="ebay-mentorship">
+        <div class="mentorship-banner">
+          <div class="mentorship-icon">◈</div>
+          <div>
+            <h4>Elite 1-on-1 Mentorship Program</h4>
+            <p>Direct access to our senior coaches. Tailored strategy sessions, real-time store audits, and accountability that drives results. Reserved for a maximum of 12 students per cohort.</p>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border);">
+          <div style="background: var(--black); padding: 48px 40px;">
+            <div class="course-card-tag" style="margin-bottom: 20px;">90-Day Intensive</div>
+            <h3 style="font-family: var(--font-display); font-size: 28px; font-weight: 800; text-transform: uppercase; margin-bottom: 20px; letter-spacing: -0.01em;">Personal Coaching<br>Program</h3>
+            <p style="font-size: 14px; color: var(--silver); line-height: 1.7; margin-bottom: 32px; font-weight: 300;">Weekly 1-on-1 strategy calls, store audits, Telegram direct access, and a personalised roadmap built around your schedule and goals.</p>
+            <ul class="mentorship-features">
+              <li>Weekly 60-min 1-on-1 calls</li>
+              <li>Store & listing audits</li>
+              <li>Direct Telegram access (M–F)</li>
+              <li>Custom product research</li>
+              <li>Supplier introductions</li>
+              <li>Ad account setup & review</li>
+              <li>Monthly progress reports</li>
+              <li>Lifetime course access</li>
+            </ul>
+            <div style="margin-top: 40px; padding-top: 32px; border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between;">
+              <div>
+                <div style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--silver); margin-bottom: 8px;">Investment</div>
+                <div style="font-family: var(--font-display); font-size: 40px; font-weight: 800; letter-spacing: -0.03em;">$2,400</div>
+              </div>
+              <a href="#booking" class="btn-primary"><span>Apply Now</span></a>
+            </div>
+          </div>
+          <div style="background: rgba(201,168,76,0.03); padding: 48px 40px; border-left: 1px solid rgba(201,168,76,0.15);">
+            <div class="course-card-tag" style="margin-bottom: 20px;">VIP — Limited Spots</div>
+            <h3 style="font-family: var(--font-display); font-size: 28px; font-weight: 800; text-transform: uppercase; margin-bottom: 20px; letter-spacing: -0.01em; color: var(--gold);">Full Partnership<br>Program</h3>
+            <p style="font-size: 14px; color: var(--silver); line-height: 1.7; margin-bottom: 32px; font-weight: 300;">We build and manage your eBay store together. Revenue share model — we're invested in your success because we profit when you profit.</p>
+            <ul class="mentorship-features">
+              <li>Done-with-you store setup</li>
+              <li>Daily performance oversight</li>
+              <li>Dedicated account manager</li>
+              <li>Priority listing strategy</li>
+              <li>Exclusive supplier network</li>
+              <li>Cashflow optimisation</li>
+              <li>Max 4 partnerships open</li>
+              <li>Revenue share model</li>
+            </ul>
+            <div style="margin-top: 40px; padding-top: 32px; border-top: 1px solid rgba(201,168,76,0.2); display: flex; align-items: center; justify-content: space-between;">
+              <div>
+                <div style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px;">Application Only</div>
+                <div style="font-family: var(--font-display); font-size: 26px; font-weight: 800; letter-spacing: -0.02em; color: var(--gold);">By Interview</div>
+              </div>
+              <a href="#booking" class="btn-primary" style="background: var(--gold); color: var(--black);"><span>Book Call</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ RESULTS ═══════════ -->
+<section id="results">
+  <div class="container">
+    <div class="results-header reveal">
+      <div class="section-label">Student Results</div>
+      <h2>Real Numbers.<br>Real Students.</h2>
+    </div>
+    <div class="results-grid" id="results-grid">
+      <!-- Generated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PROCESS ═══════════ -->
+<section id="process">
+  <div class="container">
+    <div class="process-header reveal">
+      <div class="section-label">The Method</div>
+      <h2>How We<br>Build Winners</h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="process-num">01</div>
+        <div class="process-step-line"></div>
+        <h3>Foundation</h3>
+        <p>Platform setup, niche selection, and market research. We ensure your business is built on data — not assumptions.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">02</div>
+        <div class="process-step-line"></div>
+        <h3>Launch</h3>
+        <p>First listings, first sales, and first profits. Momentum is built in the first 30 days with our proven product-market fit framework.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">03</div>
+        <div class="process-step-line"></div>
+        <h3>Scale</h3>
+        <p>Automation, delegation, and cash-flow management. We build systems that multiply your output without multiplying your hours.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">04</div>
+        <h3>Master</h3>
+        <p>Advanced strategies, multiple income streams, and long-term brand equity. You don't just earn — you own an asset.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ TESTIMONIALS ═══════════ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="testimonials-header reveal">
+      <div class="section-label">Testimonials</div>
+      <h2>What Students<br>Are Saying</h2>
+    </div>
+  </div>
+  <div class="testimonials-track-outer" style="padding: 0 60px;">
+    <div class="testimonials-track" id="testimonials-track">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ BOOKING ═══════════ -->
+<section id="booking">
+  <div class="container">
+    <div class="booking-inner">
+      <div class="booking-left reveal">
+        <div class="section-label">Book a Session</div>
+        <h2>Your First<br>Step to <em>Profit</em></h2>
+        <p>Book a free 30-minute strategy call. We'll assess your situation, outline a clear roadmap, and determine if Alcanov Academy is the right fit for your goals.</p>
+        <ul class="booking-perks">
+          <li>
+            <div class="booking-perk-icon">✓</div>
+            <span>No sales pressure — just a genuine conversation about your goals and our approach.</span>
+          </li>
+          <li>
+            <div class="booking-perk-icon">→</div>
+            <span>Walk away with a clear, actionable plan regardless of whether you join.</span>
+          </li>
+          <li>
+            <div class="booking-perk-icon">◈</div>
+            <span>Limited slots available each week. Priority given to serious applicants only.</span>
+          </li>
+        </ul>
+        <div style="display: flex; gap: 32px; padding-top: 32px; border-top: 1px solid var(--border);">
+          <div>
+            <div style="font-family: var(--font-display); font-size: 32px; font-weight: 800; color: var(--gold);">30</div>
+            <div style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--silver);">Min Free Call</div>
+          </div>
+          <div>
+            <div style="font-family: var(--font-display); font-size: 32px; font-weight: 800; color: var(--gold);">12</div>
+            <div style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--silver);">Slots / Week</div>
+          </div>
+          <div>
+            <div style="font-family: var(--font-display); font-size: 32px; font-weight: 800; color: var(--gold);">$0</div>
+            <div style="font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--silver);">No Obligation</div>
+          </div>
+        </div>
+      </div>
+      <div class="booking-right reveal reveal-delay-2">
+        <div class="calendly-frame">
+          <!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/revanabdulov2006?hide_landing_page_details=1&hide_gdpr_banner=1&background_color=000000&text_color=c9a84d&primary_color=c9a84c" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <div class="footer-logo">Alcanov<span>.</span> Academy</div>
+  <div class="footer-links">
+    <a href="#courses">Courses</a>
+    <a href="#results">Results</a>
+    <a href="#booking">Mentorship</a>
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+  </div>
+  <div class="footer-copy">© 2025 Alcanov Academy. All Rights Reserved.</div>
+</footer>
+
+<script>
+/* ── CURSOR ── */
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursor-ring');
+let mx = 0, my = 0, rx = 0, ry = 0;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+function animateCursor() {
+  rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
+  cursor.style.left = mx + 'px'; cursor.style.top = my + 'px';
+  ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+  requestAnimationFrame(animateCursor);
+}
+animateCursor();
+document.querySelectorAll('a, button, .course-card, .result-card, .testimonial-card').forEach(el => {
+  el.addEventListener('mouseenter', () => { ring.style.width = '64px'; ring.style.height = '64px'; ring.style.borderColor = 'rgba(201,168,76,0.6)'; });
+  el.addEventListener('mouseleave', () => { ring.style.width = '40px'; ring.style.height = '40px'; ring.style.borderColor = 'rgba(255,255,255,0.4)'; });
+});
+
+/* ── NAV SCROLL ── */
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 60); });
+
+/* ── PLATFORM TABS ── */
+function switchPlatform(platform, btn) {
+  document.querySelectorAll('.platform-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.platform-content').forEach(c => c.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('platform-' + platform).classList.add('active');
+}
+
+/* ── EBAY TOGGLE ── */
+function switchEbay(panel, btn) {
+  document.querySelectorAll('.ebay-toggle-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.ebay-panel').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('ebay-' + panel).classList.add('active');
+}
+
+/* ── RESULTS GALLERY ── */
+const resultsData = [
+  { profit: '$8,240', name: 'Marcus T.', period: 'Month 2 — Shopify', bg: 'result-bg-1', bars: [30,55,45,70,60,85,72,90] },
+  { profit: '$3,890', name: 'Zara K.', period: 'Week 6 — eBay', bg: 'result-bg-2', bars: [20,35,50,42,65,58,70,62] },
+  { profit: '$14,500', name: 'Alex R.', period: 'Month 4 — Shopify', bg: 'result-bg-3', bars: [40,60,70,80,75,90,88,95] },
+  { profit: '$6,100', name: 'Dani M.', period: 'Month 3 — eBay', bg: 'result-bg-4', bars: [25,40,55,60,50,72,68,80] },
+  { profit: '$21,340', name: 'Jordan S.', period: 'Month 5 — Shopify', bg: 'result-bg-5', bars: [50,65,80,75,88,92,85,95] },
+  { profit: '$4,700', name: 'Priya L.', period: 'Week 8 — eBay', bg: 'result-bg-6', bars: [18,30,42,55,48,65,60,70] },
+  { profit: '$9,850', name: 'Omar F.', period: 'Month 3 — Shopify', bg: 'result-bg-7', bars: [35,50,62,58,75,80,72,88] },
+  { profit: '$5,200', name: 'Nina C.', period: 'Month 2 — eBay', bg: 'result-bg-8', bars: [22,38,48,52,60,55,68,72] },
+];
+
+const grid = document.getElementById('results-grid');
+resultsData.forEach((r, i) => {
+  const card = document.createElement('div');
+  card.className = 'result-card';
+  const barsHTML = r.bars.map(h => `<div class="result-bar" style="height:${h}%"></div>`).join('');
+  card.innerHTML = `
+    <div class="result-card-bg ${r.bg}">
+      <div class="result-chart">${barsHTML}</div>
+    </div>
+    <div class="result-card-inner">
+      <div class="result-card-profit">${r.profit}</div>
+      <div class="result-card-name">${r.name} — ${r.period}</div>
+    </div>
+    <div class="result-card-overlay"><span>View Result</span></div>
+  `;
+  card.addEventListener('click', () => openLightbox(r, card));
+  grid.appendChild(card);
+});
+
+/* ── LIGHTBOX ── */
+function openLightbox(r, cardEl) {
+  const lb = document.getElementById('lightbox');
+  const canvas = document.getElementById('lightbox-img');
+  const ctx = canvas.getContext('2d');
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  const grad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+  grad.addColorStop(0, '#0d180d');
+  grad.addColorStop(1, '#0a1f0a');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.strokeStyle = 'rgba(255,255,255,0.03)';
+  ctx.lineWidth = 1;
+  for(let x = 0; x < canvas.width; x += 40) { ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, canvas.height); ctx.stroke(); }
+  for(let y = 0; y < canvas.height; y += 40) { ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(canvas.width, y); ctx.stroke(); }
+  const barW = 40; const barGap = 16; const startX = 80; const maxBarH = 200; const baseY = 380;
+  r.bars.forEach((h, i) => {
+    const barH = (h / 100) * maxBarH;
+    const x = startX + i * (barW + barGap);
+    const grad2 = ctx.createLinearGradient(x, baseY - barH, x, baseY);
+    grad2.addColorStop(0, '#C9A84C');
+    grad2.addColorStop(1, 'rgba(201,168,76,0.2)');
+    ctx.fillStyle = grad2;
+    ctx.fillRect(x, baseY - barH, barW, barH);
+  });
+  ctx.font = 'bold 56px Syne, sans-serif';
+  ctx.fillStyle = '#C9A84C';
+  ctx.textAlign = 'left';
+  ctx.fillText(r.profit, 80, 460);
+  ctx.font = '14px DM Mono, monospace';
+  ctx.fillStyle = 'rgba(255,255,255,0.4)';
+  ctx.fillText('NET PROFIT — VERIFIED', 80, 485);
+  ctx.fillStyle = 'rgba(255,255,255,0.08)';
+  ctx.font = 'bold 100px Syne, sans-serif';
+  ctx.textAlign = 'right';
+  ctx.fillText('AA', 680, 120);
+  document.getElementById('lightbox-profit').textContent = r.profit;
+  document.getElementById('lightbox-name').textContent = r.name;
+  document.getElementById('lightbox-period').textContent = r.period;
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.getElementById('lightbox').addEventListener('click', function(e) {
+  if (e.target === this) closeLightbox();
+});
+
+/* ── TESTIMONIALS ── */
+const testimonialsData = [
+  { quote: "I went from zero to $8K/month in just 3 months. The structured approach and personal feedback made all the difference.", name: "Marcus T.", meta: "$8,240 / mo — Shopify" },
+  { quote: "The eBay mentorship program is unlike anything I've seen. Direct access to someone who actually does this at scale.", name: "Zara K.", meta: "$3,890 / mo — eBay" },
+  { quote: "Alcanov's systems are military-grade precise. I scaled to $14K before month four. The community alone is worth the price.", name: "Alex R.", meta: "$14,500 / mo — Shopify" },
+  { quote: "I tried 3 other courses before this. None of them came close. The depth of the eBay content is unmatched in the industry.", name: "Dani M.", meta: "$6,100 / mo — eBay" },
+  { quote: "The mentorship program is a cheat code. My coach identified gaps in my strategy I'd been blind to for months.", name: "Jordan S.", meta: "$21,340 / mo — Shopify" },
+  { quote: "Premium price, premium results. I've never had a better ROI on any investment than Alcanov's VIP program.", name: "Priya L.", meta: "$4,700 / mo — eBay" },
+];
+const track = document.getElementById('testimonials-track');
+const allTestimonials = [...testimonialsData, ...testimonialsData];
+allTestimonials.forEach(t => {
+  const card = document.createElement('div');
+  card.className = 'testimonial-card';
+  card.innerHTML = `
+    <p class="testimonial-quote">${t.quote}</p>
+    <div class="testimonial-author">
+      <div class="testimonial-avatar">${t.name.split(' ').map(w => w[0]).join('')}</div>
+      <div>
+        <div class="testimonial-name">${t.name}</div>
+        <div class="testimonial-meta">${t.meta}</div>
+      </div>
+    </div>
+  `;
+  track.appendChild(card);
+});
+
+/* ── INTERSECTION OBSERVER ── */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.15 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+const cardObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.course-card, .process-step').forEach(el => cardObserver.observe(el));
+
+/* ── PARALLAX ── */
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  const gridBg = document.querySelector('.grid-bg');
+  if (gridBg) gridBg.style.transform = `translateY(${scrollY * 0.3}px)`;
+});
+</script>
+</body>
+</html>
