@@ -18,8 +18,8 @@
   --border-bright: rgba(255, 255, 255, 0.25);
   --surface: rgba(255, 255, 255, 0.03);
   --surface-hover: rgba(255, 255, 255, 0.06);
-  --font-display: 'Syne', Unbounded;
-  --font-body: 'DM Sans', Unbounded;
+  --font-display: 'Montserrat', sans-serif;
+  --font-body: 'Manrope', sans-serif;
   --font-mono: 'DM Mono', monospace;
 }
 
